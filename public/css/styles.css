@@ -4,20 +4,17 @@ body {
     font-family: monospace;
     color: #333;
     padding: 0 16px;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     margin: auto;
+    font-size: 18px;
 }
 
 main {
-    min-height: 80vh;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
+    margin-top: 15%;
 }
 
 header {
@@ -25,9 +22,14 @@ header {
     justify-content: space-between;
 }
 
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+
 footer h3 {
-    color: rgb(117, 115, 115) !important;
-    text-align: center;
+    color: rgb(117, 115, 115);
 }
 
 footer a {
