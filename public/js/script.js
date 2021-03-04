@@ -1,5 +1,3 @@
-// console.log("Message from client side script");
-
 var weatherForm = document.querySelector("form");
 var search = document.querySelector("input");
 var messageOne = document.querySelector("#msg1");
