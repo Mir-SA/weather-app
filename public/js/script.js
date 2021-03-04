@@ -4,7 +4,7 @@ var messageOne = document.querySelector("#msg1");
 var messageTwo = document.querySelector("#msg2");
 
 var address = (str) => {
-    fetch(`http://localhost:3000/weather?address=${str}`).then((response) => {
+    fetch(`/weather?address=${str}`).then((response) => {
         response.json().then((data) => {
             if (data.error) messageOne.textContent = data.error;
             else {
