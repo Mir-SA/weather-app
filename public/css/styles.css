@@ -9,12 +9,12 @@ body {
 }
 
 main {
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    margin-top: 15%;
 }
 
 header {
@@ -22,14 +22,9 @@ header {
     justify-content: space-between;
 }
 
-footer {
-    position: absolute;
-    bottom: 0;
-    left: 45%;
-}
-
 footer h3 {
     color: rgb(117, 115, 115);
+    margin: 5% 35%;
 }
 
 footer a {
@@ -88,4 +83,22 @@ form button:hover {
 
 #msg2 {
     font-weight: 700;
+}
+
+@media (max-width: 800px) {
+    body {
+        max-width: 100vw;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form input {
+        width: 50vw;
+    }
 }
