@@ -8,7 +8,7 @@ const forecast = (lat, long, callback) => {
         .then(({ data }) => {
             callback(
                 undefined,
-                `${data.current.weather[0].description}. It is currently ${data.current.temp} degrees out. There is ${data.minutely[0].precipitation}% chance of rain `
+                `${data.current.weather[0].description}. It is currently ${data.current.temp} degrees out. The high today is ${data.daily[0].temp.max}ºC with a low of ${data.daily[0].temp.min}ºC There is ${data.minutely[0].precipitation}% chance of rain `
             );
         })
         .catch((err) => {
