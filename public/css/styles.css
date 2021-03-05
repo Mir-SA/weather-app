@@ -24,7 +24,8 @@ header {
 
 footer h3 {
     color: rgb(117, 115, 115);
-    margin: 5% 35%;
+    margin: 5% auto;
+    width: max-content;
 }
 
 footer a {
@@ -100,5 +101,9 @@ form button:hover {
 
     form input {
         width: 50vw;
+    }
+
+    main p {
+        text-align: center;
     }
 }
